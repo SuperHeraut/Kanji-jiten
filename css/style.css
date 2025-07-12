@@ -1,26 +1,31 @@
 body {
-	background-color: #000000ff;
-	color: #00ff00ff;
+  background-color: #000000ff;
+  color: #00ff00ff;
+  min-width: 100vh;
 }
-nav #menu li.title:hover ul, header {
+.title:hover ul,
+header {
   backdrop-filter: blur(5px);
 }
 
-nav #menu {
+#menu {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  width: 100%;
+  margin: 0.5rem 0;
 }
 
-html main {
+main {
   margin: auto;
   box-sizing: border-box;
   padding: 1rem;
+  width: 100%;
 }
-html section {
+section {
   padding: 0.5rem 0;
 }
-html section div {
+section div {
   padding: 0.2rem 0;
 }
 
@@ -39,7 +44,8 @@ sup {
   font-size: 0.5rem;
 }
 
-ul, li {
+ul,
+li {
   text-decoration: none;
   text-align: center;
 }
@@ -58,9 +64,9 @@ li ul {
 
 .vertext {
   writing-mode: vertical-rl;
-  display:flex;
+  display: flex;
   flex-direction: column;
-  align-items:right
+  align-items: right;
   flex-wrap: wrap;
 }
 
@@ -79,15 +85,12 @@ header h2 {
 nav a {
   display: block;
 }
-nav #menu {
-  width: 100%;
-  margin: 0.5rem 0;
-}
-nav #menu li {
+
+#menu li {
   width: auto;
   position: relative;
 }
-nav #menu li.title {
+li.title {
   display: flex;
   flex-direction: column;
   vertical-align: top;
@@ -96,16 +99,16 @@ nav #menu li.title {
   box-sizing: border-box;
   width: 10%;
 }
-nav #menu li.title ul {
+li.title ul {
   display: none;
   width: 100%;
   box-sizing: border-box;
   position: absolute;
 }
-nav #menu li.title ul .roll {
+li.title ul .roll {
   width: 100%;
 }
-nav #menu li.title:hover ul {
+li.title:hover ul {
   display: block;
   text-align: center;
   padding-bottom: 0.25rem;
